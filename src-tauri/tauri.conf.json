@@ -7,12 +7,16 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "MiLauncher",
+    "productName": "mi_launcher",
     "version": "0.0.0"
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
     },
     "bundle": {
       "active": true,
@@ -29,7 +33,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "larinenok.milauncher",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -55,11 +59,12 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
         "title": "MiLauncher",
-        "width": 800
+        "minWidth": 450,
+        "minHeight": 225,
+        "width": 450,
+        "height": 225,
+        "resizable": true
       }
     ]
   }

@@ -1,7 +1,40 @@
-.logo.vite:hover {
-  filter: drop-shadow(0 0 2em #747bff);
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #264653;
+    display: grid;
+    grid-template: auto auto / 200px minmax(200px, auto);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
 
-.logo.solid:hover {
-  filter: drop-shadow(0 0 2em #2f5d90);
+.header {
+    grid-column: 1 / 3;
+    background-color: #2a9d8f;
+}
+
+.work {
+    background-color: #f4a261;
+}
+
+.unwork {
+    background-color: #e76f51;
+}
+
+.centered {
+    display: grid;
+    place-items: center;
+}
+
+.item {
+    height: 50%;
 }
